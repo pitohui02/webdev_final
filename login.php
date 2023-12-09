@@ -166,6 +166,13 @@
         font-weight: 500;
         line-height: normal;
     }
+
+    .login-form button:hover {
+        transition: 1s;
+
+        background: #403e3e;
+        cursor: pointer;
+    }
     
     .login-form a {
         color: #000;
@@ -187,6 +194,10 @@
 
         gap: 20px;
         
+    }
+
+    .sign-up {
+        color: #292696;
     }
 
     /* footer */
@@ -326,7 +337,7 @@ if (isset($_POST['user_email']) && isset($_POST['user_password'])) {
 
                     <button type = submit">Login</button>
 
-                    <a href = "signup"> Don’t have an account yet? <span>Sign up</span> </a>
+                    <a href = "create.php"> Don’t have an account yet? <span class = "sign-up">Sign up</span> </a>
                     <h4> OR </h4>
 
                     <div class = "alternate-login">
@@ -365,8 +376,7 @@ if (isset($_POST['user_email']) && isset($_POST['user_password'])) {
 
     </div>
 
-
-
-
 </body>
+
+
 </html>

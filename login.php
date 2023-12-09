@@ -201,6 +201,8 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
+        margin-top: 30px;
     }
 
 
@@ -209,9 +211,25 @@
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
+        gap: 20px;
     }
 
+    .footer-socials {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin-top: 30px;
+    }
 
+    .footer-copyrights {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+    }
 
     footer a {
         color: #FFF;

@@ -3,7 +3,8 @@
   $user="root";// user name
   $pass="";//password
   //$dbname="system_integration"; //database name
-  $dbname="caseStudy"; //database name
+  $dbname="testdb"; //database name
+
   $conn= new mysqli($server,$user,$pass,$dbname);
   if($conn->connect_error){
     die('Connection Problem:'.$conn->connect_error);

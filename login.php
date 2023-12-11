@@ -4,61 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel = "stylesheet"href="global.css">
+    <link rel = "stylesheet"href="css/global.css">
     <link rel = "stylesheet"href="css/login.css">
 </head>
 
 <?php
 include('config.php');
 
-if (isset($_POST['user_email']) && isset($_POST['user_password'])) {
-    $u = trim($_POST['user_email']);
-    $sql = "SELECT id, user_email, user_password FROM tbl_users WHERE user_email = ?";
-    
-    if ($stmt = $conn->prepare($sql)) {
-        $stmt->bind_param("s", $u);
-        $stmt->execute();
-        $result = $stmt->get_result();
+    if (isset($_POST['user_email']) && isset($_POST['user_password'])) {
+        $u = trim($_POST['user_email']);
+        $sql = "SELECT id, user_email, user_password FROM tbl_users WHERE user_email = ?";
+        
+        if ($stmt = $conn->prepare($sql)) {
+            $stmt->bind_param("s", $u);
+            $stmt->execute();
+            $result = $stmt->get_result();
 
-        if ($result->num_rows > 0) {
-            $row = $result->fetch_assoc();
-            $hashed_password = $row['user_password'];
+            if ($result->num_rows > 0) {
+                $row = $result->fetch_assoc();
+                $hashed_password = $row['user_password'];
 
-            // Verify the entered password against the retrieved hash
-            if (password_verify($_POST['user_password'], $hashed_password)) {
-               echo "Success!"; // Password is correct
+                // Verify the entered password against the retrieved hash
+                if (password_verify($_POST['user_password'], $hashed_password)) {
+                echo "Success!"; // Password is correct
+                } else {
+                    echo "Invalid credentials!"; // Password is incorrect
+                }
             } else {
-                echo "Invalid credentials!"; // Password is incorrect
+                echo "User does not exist!"; // No user found with the provided email
             }
         } else {
-            echo "User does not exist!"; // No user found with the provided email
+            echo $conn->error; 
         }
     } else {
-        echo $conn->error; 
+        echo "Invalid request";
     }
-} else {
-    echo "Invalid request";
-}
+    
 ?>
 
 <body>
     
 
     <div class = "parent">
-        <div>
-            <nav class = "nav">
-                <img src="public/renton-logo.png" width="150" height="150">
-                <div class = "nav_link">
-                    <a href = "home">Home </a>
-                    <a href = "explore">Explore </a>
-                    <a href = "ownercollab">Owner Collaborations </a>
-                    <a href = "contact">Contact Us </a>
-                    <a href = "about">About Us </a>
-                    <a href = "login">Login / Signup </a>
-                </div>
-
-            </nav>
-        </div>
+        
+        <?php include("components/navbar.php"); ?>
 
         <div class = "login-box"> 
                 <div class = "logo-content">
@@ -92,31 +81,7 @@ if (isset($_POST['user_email']) && isset($_POST['user_password'])) {
 
         </div>
 
-        <div class = "footer-box"> 
-            <footer>
-
-                <div class = "links">
-                    <div class = "footer-links">
-                        <a href = "explore">Explore </a>
-                        <a href = "ownercollab">Owner Collaborations </a>
-                        <a href = "contact">Contact Us </a>
-                        <a href = "about">About Us </a>
-                        <a href = "login">Login / Signup </a>
-                    </div>
-
-                    <div class = "footer-socials">
-                    <a href = ""><img src="public/fb-icon.svg" width="30" height="30"></a>
-                    <a href = ""><img src="public/x-icon.svg" width="30" height="30"></a>
-                    <a href = ""><img src="public/insta-icon.svg" width="30" height="30"></a>
-                    </div>
-                </div>
-
-                <div class = "footer-copyrights">
-                    <img src="public/renton-logo.png" width="100" height="100">
-                    <h4> Copyright © 2024 Renton. All rights reserved. </h4>
-                </div>
-            </footer>
-        </div>
+        <?php include("components/footer.php"); ?>
 
     </div>
 

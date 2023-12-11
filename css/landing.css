@@ -1,0 +1,247 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.child1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    height: 800px;
+}
+
+.left {
+    display: flex;
+    flex-direction: column;
+}
+
+.left h4 {
+    color: #FFF;
+    font-family: Clash Display;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    width: 776px;
+    height: 106px;
+}
+
+.button-landing {
+    width: 175px;
+    height: 45px;
+
+    border-radius: 8px;
+    border: 3px solid #1E1E1E;
+    
+}
+
+.home-button {
+    background: #1E1E1E;
+    color: #FFF;
+    font-family: Clash Display;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.partner-button {
+    background: transparent;
+
+    color: #FFF;
+    font-family: Clash Display;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.home-button:hover {
+    transition: 500ms;
+    background: transparent;
+    cursor: pointer;
+}
+
+.partner-button:hover {
+    transition: 500ms;
+    background: #1E1E1E;
+    cursor: pointer;
+}
+
+.logo-landing {
+    width: 638px;
+    height: 426px;
+    flex-shrink: 0;
+}
+
+/* Child 2 */
+
+.child2 {
+
+    width: 100%;
+    height: 1000px;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    
+}
+
+.card {
+    width: 370px;
+    height: 500px;
+    flex-shrink: 0;
+
+    border-radius: 8px;
+    background: #FFF;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.placeholder-card {
+    border-radius: 8px;
+}
+
+.info-card {
+    align-self: flex-start;
+    margin-left: 40px;
+}
+
+.info-card p:nth-of-type(1) {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 1000;
+    line-height: normal;
+}
+
+.info-card p:nth-of-type(2){
+    color: #B5B5B5;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.info-card p:nth-of-type(3){
+    color: #292697;
+    font-family: Clash Display;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+
+.child2 h5 {
+    color: #FFF;
+    font-family: Clash Display;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    height: 78px;
+    width: 916px;
+}
+
+/* Child 3 */
+
+.child3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+    
+}
+
+.title h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Clash Display;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0;
+}
+
+.title h3 {
+    color: #F1F1F1;
+    font-family: Clash Display;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.child3-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    
+}
+
+.content-1, .content-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    justify-content: center;
+    align-self: center;
+}
+
+
+.contents {
+    height: 150px;
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    justify-content: center;
+    align-self: center;
+}
+
+
+.contents h2 {
+    color: #FFF;
+    font-family: Clash Display;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    
+}
+
+.contents p {
+    color: #FFF;
+    text-align: center;
+    font-family: Clash Display;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    
+}

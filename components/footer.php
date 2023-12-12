@@ -16,7 +16,7 @@
                         <a href = "ownercollab">Owner Collaborations </a>
                         <a href = "contact">Contact Us </a>
                         <a href = "about">About Us </a>
-                        <a href = "login">Login / Signup </a>
+                        <a href = "login.php">Login / Signup </a>
                     </div>
 
                     <div class = "footer-socials">

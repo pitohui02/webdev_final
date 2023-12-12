@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel = "stylesheet"href="css/global.css">
-    <link rel = "stylesheet"href="css/create.css">
+    <link rel = "stylesheet" href="css/global.css">
+    <link rel = "stylesheet" href="css/create.css">
+   
 </head>
 
 <body>
@@ -35,7 +36,19 @@
 
                             <input type = "password" name="Password" placeholder = "Password" class = "input">
                             <input type = "password" name="confirm_password" placeholder = "Confirm Password" class = "input">
-                        </div>    
+                        </div>
+                        
+                        <div class="terms-and-conditions">
+                        <p id="openModal" class = "modal-tac">Terms & Conditions</p>
+
+                        <div id="myModal" class="modal">
+                            <?php include("components/tac.php"); ?>
+                            <button onclick="closeModal()">Close</button>
+                        </div>
+
+                            <!-- Overlay background -->
+                            <div id="overlay" class="overlay"></div>
+                        </div>
 
                         <button type = submit">SIGN UP</button>
 
@@ -47,5 +60,6 @@
             <?php include("components/footer.php"); ?>
 
         </div>
+    <script src="functions/modal.js"></script>   
 </body>
 </html>

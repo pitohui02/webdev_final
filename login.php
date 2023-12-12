@@ -9,7 +9,7 @@
 </head>
 
 <?php
-include('config.php');
+// include('config.php');
 
     if (isset($_POST['user_email']) && isset($_POST['user_password'])) {
         $u = trim($_POST['user_email']);

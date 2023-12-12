@@ -6,7 +6,7 @@
 }
 
 .nav {
-    width: 100%;
+    width: 1700px;
 
     display: flex;
     flex-wrap: wrap;
@@ -110,6 +110,8 @@
     gap: 20px;
 }
 
+
+
 .input {
     width: 300px;
     height: 40px;
@@ -121,7 +123,7 @@
 
     color: #000;
     font-family: Clash Display;
-    font-size: 20px;
+    font-size: 15px;
     font-style: normal;
     font-weight: 300;
     line-height: normal;

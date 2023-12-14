@@ -1,0 +1,18 @@
+.parent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: auto;
+    height: auto;
+    gap: 50px;
+}
+
+.card-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    height: 100%;
+}

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel = "stylesheet"href="css/navbar-footer.css">
+
     
 </head>
 <body>
@@ -12,7 +14,7 @@
 
                 <div class = "links">
                     <div class = "footer-links">
-                        <a href = "explore">Explore </a>
+                        <a href = "explore.php">Explore </a>
                         <a href = "ownercollab">Owner Collaborations </a>
                         <a href = "contact">Contact Us </a>
                         <a href = "about">About Us </a>

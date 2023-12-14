@@ -4,8 +4,10 @@
     flex-direction: column;
     flex-wrap: wrap;
 
-    width: 100%;
-    height: auto;
+    justify-content: center;
+    align-items: center;
+
+    
 }
 
 .child1 {
@@ -66,7 +68,8 @@
 
 .home-button:hover {
     transition: 500ms;
-    background: transparent;
+    background: #1f6e86;
+    border: none;
     cursor: pointer;
 }
 
@@ -92,63 +95,8 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-
-
-    
+   
 }
-
-.card {
-    width: 370px;
-    height: 500px;
-    flex-shrink: 0;
-
-    border-radius: 8px;
-    background: #FFF;
-
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-}
-
-.placeholder-card {
-    border-radius: 8px;
-}
-
-.info-card {
-    align-self: flex-start;
-    margin-left: 40px;
-}
-
-.info-card p:nth-of-type(1) {
-    color: #000;
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 1000;
-    line-height: normal;
-}
-
-.info-card p:nth-of-type(2){
-    color: #B5B5B5;
-    font-family: Inter;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.info-card p:nth-of-type(3){
-    color: #292697;
-    font-family: Clash Display;
-    font-size: 15px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-
 
 .child2 h5 {
     color: #FFF;
@@ -253,145 +201,3 @@
 
 /* Child 4 */
 
-.child4 {
-    width: 90%;
-    height: 3000px;
-    flex-shrink: 0;
-    background: linear-gradient(#1E1E1E 40%, #1f6e86);
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0;
-    
-    border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
-}
-
-.about-us {
-    margin-top: 100px;
-}
-.child4 h1 {
-    color: #FFF;
-    text-align: center;
-    font-family: Clash Display;
-    font-size: 45px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.child4 h3 {
-    color: #FFF;
-    font-family: Clash Display;
-    font-size: 36px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.child4 p {
-    color: #FFF;
-    text-align: center;
-    font-family: Clash Display;
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 200;
-    line-height: normal;
-
-    text-align: center;
-    width: 700px;
-}
-
-.space {
-    margin-top: 100px;
-
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-}
-
-
-.secure-your-space {
-    margin-top: 200px;
-    margin-bottom: 100px;
-}
-
-.space p {
-    width: 500px;
-}
-
-.explore, .secure, .settle-in {
-    display: flex;
-    flex-direction: row;
-    gap: 100px;
-
-    justify-content: center;
-    align-items: center;
-}
-
-.explore h3, .explore p, .settle-in h3, .settle-in p {
-    text-align: left;
-}
-
-.secure h3, .secure p {
-    text-align: right;
-}
-
-.secure {
-    flex-direction: row-reverse;
-}
-
-.get-in-touch {
-    margin-top: 300px;
-    display: flex;
-    flex-direction: column;
-
-    justify-content: center;
-    align-items: center;
-
-    gap: 50px;
-}
-
-.get-in-touch h1 {
-    color: #FFF;
-    text-align: center;
-    font-family: Clash Display;
-    font-size: 50px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-
-}
-
-.get-in-touch p {
-    color: #FFF;
-    text-align: center;
-    font-family: Clash Display;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-}
-
-.get-in-touch button {
-    border-radius: 8px;
-    background: #FFF;
-
-    width: 358px;
-    padding: 14px 45px;
-
-    color: #1E1E1E;
-    font-family: Clash Display;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-}
-
-.get-in-touch button:hover {
-    transition: 500ms;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-}
